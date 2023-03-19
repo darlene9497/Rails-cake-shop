@@ -1,10 +1,9 @@
 class CakesController < ApplicationController
-    wrap_parameters format: []
     rescue_from ActiveRecord::RecordNotFound, with: :render_not_found_response
     
     def index
         cake = Cake.all
-        render json: cake
+        render json: Cake.all
     end
 
     def create
@@ -38,15 +37,15 @@ class CakesController < ApplicationController
     end
     private
 
-    def cake_params
-        params.permit(:name, :weight, :flavor, :ingredients)
-    end
+    # def cake_params
+    #     params.permit(:name, :weight, :flavor, :ingredients)
+    # end
 
     def render_not_found_response
         render json: {error: "Cake not found"}, status: :not_found
     end
 
     def find_cake
-        Cake.find_by(id: params[:id])
+        Cake.find(params[:id])
     end
 end

@@ -3,7 +3,7 @@ class CreateBakers < ActiveRecord::Migration[7.0]
     create_table :bakers do |t|
       t.string :name
       t.string :email
-      #t.belongs_to :baker, null: false, foreign_key: true
+      t.string :description
 
       t.timestamps
     end
