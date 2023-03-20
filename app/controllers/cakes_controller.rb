@@ -35,6 +35,12 @@ class CakesController < ApplicationController
             render_not_found_response
         end
     end
+
+    def summary
+        cake = find_cake
+        render json: cake, serializer:CakeSummarySerializer
+    end
+
     private
 
     # def cake_params

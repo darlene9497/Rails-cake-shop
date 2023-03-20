@@ -1,5 +1,5 @@
-class CakeSerializer < ActiveModel::Serializer
-  attributes :id, :name, :weight, :flavor, :ingredients, :summary
+class CakeSummarySerializer < ActiveModel::Serializer
+  attributes :summary
 
   def summary
     "#{self.object.name}- #{self.object.flavor} - #{self.object.ingredients[0..30]}..."
