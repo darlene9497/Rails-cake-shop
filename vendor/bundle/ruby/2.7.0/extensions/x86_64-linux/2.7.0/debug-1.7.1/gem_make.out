@@ -1,0 +1,16 @@
+current directory: /home/susan/Development/code/phase-4/practice/Rails-cake-shop/vendor/bundle/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+/home/susan/.rbenv/versions/2.7.4/bin/ruby -I /home/susan/.rbenv/versions/2.7.4/lib/ruby/2.7.0 -r ./siteconf20230320-6546-1q33xsn.rb extconf.rb
+creating Makefile
+
+current directory: /home/susan/Development/code/phase-4/practice/Rails-cake-shop/vendor/bundle/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/susan/Development/code/phase-4/practice/Rails-cake-shop/vendor/bundle/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/susan/Development/code/phase-4/practice/Rails-cake-shop/vendor/bundle/ruby/2.7.0/gems/debug-1.7.1/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20230320-6546-1dugbfi/debug
